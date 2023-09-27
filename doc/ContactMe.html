@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Brei's Feedback Form</title>
+    </head>
+    <body>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xm3YgoEiEDc?si=7x1dvKaKNnObZsao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <fieldset>
+            <legend>Feedback Form:</legend>
+            <form>
+                <p>First Name: <input type="text" placeholder="anonymous" name="fname" attribute="required"></p>
+                <p>Last Name: <input type="text" placeholder="anonymous" name="lname" attribute="required"></p>
+                <p>Email: <input type="text" placeholder="name@domain.com" name="mail"></p>
+                <p>Would you recommend this website?</p>
+                <p><input type="radio" name="recommend" value="yes">Yes</p>
+                <p><input type="radio" name="recommend" value="no">No</p>
+                <p>What's your favorite website?</p>
+                <select size="1" name="websites" id="websites">
+                    <option value="Pinterest" selected>Pinterest</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>What's your favorite browser(s) to use?</p>
+                <p>
+                    <input type="checkbox" name="browsers" value="Google Chrome">Google Chrome
+                    <input type="checkbox" name="browsers" value="Firefox">Firefox
+                    <input type="checkbox" name="browsers" value="Edge">Edge
+                    <input type="checkbox" name="browsers" value="Safari">Safari
+                    <input type="checkbox" name="browsers" value="other">Other
+    
+                </p>
+                <p>How would you rate this website on a scale of 1 to 10?</p>
+                <p>1 <input type="range" name="rating" min="1" max="10"> 10</p>
+                <p>Any additional comments?</p>
+                <textarea name="comment" cols="30" rows="10"> Enter your comment here.</textarea>
+                <p><input type="reset" name="reset" value="Reset">   <input type="submit" name="submit" value="Click to Submit"></p>
+            </form>
+        </fieldset>
+    </body>
+</html>
