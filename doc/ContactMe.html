@@ -10,13 +10,13 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="navbar">
-                        <ul>
-                            <li><a href="https://www.usca.edu/">USCAs Website</a></li>
-                            <li><a href="https://blackboard.usca.edu/">Blackboard</a></li>
-                            <li><a href="https://ssb.onecarolina.sc.edu/BANP/twbkwbis.P_GenMenu?name=homepage">Self Service Carolina (SSC)</a></li>
-                            <li><a href="#assignment">Assignments</a></li>
-                            <li><a href="#contact"> Contact Information</a></li>
+                    <div class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link text-white" href="https://www.usca.edu/">USCAs Website</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="https://blackboard.usca.edu/">Blackboard</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="https://ssb.onecarolina.sc.edu/BANP/twbkwbis.P_GenMenu?name=homepage">Self Service Carolina (SSC)</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#assignment">Assignments</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#contact"> Contact Information</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,12 +30,29 @@
                     <fieldset>
                         <legend>Feedback Form:</legend>
                         <form>
-                            <p>First Name: <input type="text" placeholder="anonymous" name="fname" attribute="required"></p>
-                            <p>Last Name: <input type="text" placeholder="anonymous" name="lname" attribute="required"></p>
-                            <p>Email: <input type="text" placeholder="name@domain.com" name="mail"></p>
-                            <p>Would you recommend this website?</p>
-                            <p><input type="radio" name="recommend" value="yes">Yes</p>
-                            <p><input type="radio" name="recommend" value="no">No</p>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="anonymous" name="fname" attribute="required" id="fname">
+                                <label for="fname"> First Name: </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="anonymous" name="lname" attribute="required" id="lname">
+                                <label for="lname">Last Name:</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email"  class="form-control" placeholder="name@domain.com" name="mail" id="email">
+                                <label for="email"> Email: </label>
+                            </div>
+                            <div class="form-group">
+                                <p>Phone Number: <input type="tel" class="form-control" placeholder="123-456-7890" name="tel" required></p>
+                            </div>
+                            <div class="form-group">
+                                <p>Date: <input type="date" class="form-control" name="date"></p>
+                            </div>
+                            <div class="form-group">
+                                <p>Would you recommend this website?</p>
+                                <p><label class="form-check-label"> <input type="radio" class="form-check-input" name="recommend" value="yes"></label>Yes</p>
+                                <p><input type="radio" name="recommend" value="no">No</p>
+                            </div>
                             <p>What's your favorite website?</p>
                             <select size="1" name="websites" id="websites">
                                 <option value="Pinterest" selected>Pinterest</option>
@@ -46,18 +63,19 @@
                             </select>
                             <p>What's your favorite browser(s) to use?</p>
                             <p>
-                                <input type="checkbox" name="browsers" value="Google Chrome">Google Chrome
-                                <input type="checkbox" name="browsers" value="Firefox">Firefox
-                                <input type="checkbox" name="browsers" value="Edge">Edge
-                                <input type="checkbox" name="browsers" value="Safari">Safari
-                                <input type="checkbox" name="browsers" value="other">Other
+                                <input type="checkbox" name="browsers" value="Google Chrome"> Google Chrome 
+                                <input type="checkbox" name="browsers" value="Firefox"> Firefox 
+                                <input type="checkbox" name="browsers" value="Edge"> Edge
+                                <input type="checkbox" name="browsers" value="Safari"> Safari 
+                                <input type="checkbox" name="browsers" value="other"> Other 
     
                             </p>
                             <p>How would you rate this website on a scale of 1 to 10?</p>
                             <p>1 <input type="range" name="rating" min="1" max="10"> 10</p>
-                            <p>Any additional comments?</p>
-                            <textarea name="comment" cols="30" rows="10"> Enter your comment here.</textarea>
-                            <p><input type="reset" name="reset" value="Reset">   <input type="submit" name="submit" value="Click to Submit"></p>
+                            <div class="form-group">
+                                <p>Any additional comments?</p>
+                                <textarea name="comment" class="form-control" cols="30" rows="10"> Enter your comment here.</textarea>
+                                <p><input type="reset" name="reset" value="Reset">   <input type="submit" name="submit" value="Click to Submit"></p>
                         </form>
                     </fieldset>
                 </div>
