@@ -1,0 +1,61 @@
+p {
+    font-family: 'Caveat',cursive;
+    font-size: 1em;
+    text-align: center;
+    color: green;
+}
+h1{
+    transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: black;
+}
+a {
+    text-decoration: none;
+} 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #7acd9a; 
+    z-index: 999; 
+}
+
+.introduction {
+    margin-top: 125px; 
+}
+
+
+.paragraph {
+    float: left;
+    width: 70%; 
+    padding-right: 20px; 
+    text-align: left;
+    line-height: 20px;
+}
+
+.image {
+    float: right;
+    width: 25%; 
+    height: auto; 
+}
+
+.assignment {
+    position: absolute;
+    top: 375px; 
+    right: 3px; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #89bd91; 
+    z-index: 999; 
+    color: #f2e8e8; 
+    text-align: center;
+    padding: 10px;
+}
+
+
